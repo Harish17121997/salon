@@ -51,7 +51,6 @@
           v-for="svc in services"
           :key="svc.name"
           class="svc-card"
-          @click="bookService(svc.name)"
         >
           <div class="svc-card__icon">{{ svc.icon }}</div>
           <div class="svc-card__body">
@@ -202,7 +201,7 @@
           </div>
         </div>
         <a
-          href="https://maps.google.com/?q=12+FC+Road+Shivajinagar+Pune"
+          href="https://www.google.com/maps/place/Mandarshree,+Baner+Rd,+Laxman+Nagar,+Baner,+Pune,+Maharashtra+411045/@18.5674352,73.7675398,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2beb546626f9b:0x8d9a9524501993f!8m2!3d18.5674352!4d73.7701147!16s%2Fg%2F1tc_cq55?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           class="btn btn--outline btn--full"
         >Open in Google Maps →</a>
@@ -292,7 +291,7 @@
 import { ref, reactive, computed, onMounted, onUnmounted } from 'vue'
 
 // ── Config ──────────────────────────────────────────────
-const WHATSAPP_NUMBER = '919876543210' // Replace with real number
+const WHATSAPP_NUMBER = '+919996060691' // Replace with real number
 const SALON_NAME = 'Aura Salon, Pune'
 
 // ── State ────────────────────────────────────────────────
@@ -494,7 +493,6 @@ body {
 
 /* ── HERO ───────────────────────────────────────── */
 .hero {
-  min-height: 100svh;
   position: relative;
   display: flex;
   flex-direction: column;
